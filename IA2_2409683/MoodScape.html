@@ -1,0 +1,311 @@
+<!-- Student Name: Tashay Dorma
+  Student ID: 2409683
+  Assignment: IA2
+  Module Code: CIT2011
+  Date: November 21, 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MoodScape — Aromatherapy & Home Relaxation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="siteHeader">
+    <div class="brand">
+      <img src="images/logo.png" alt="MoodScape logo" class="logo">
+      <h1>MoodScape</h1>
+          <p class="slogan">Wellness Begins at Home.</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="cartToggle" aria-controls="cartPanel" aria-expanded="false">Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h2>Relax. Refresh. Rejuvenate.</h2>
+        <p>Create a calming sanctuary at home with MoodScape's aromatherapy and relaxation essentials.</p>
+        <a class="btn" href="#shop">Shop Now</a>
+      </div>
+      <div class="hero-right">
+        <img src="images/Hero.png" alt="Relaxing aromatherapy scene">
+      </div>
+    </section>
+
+    <section id="shop" class="shop">
+      <h2>Shop — Browse</h2>
+
+      <article class="category" id="aromatherapy">
+        <h3>Aromatherapy</h3>
+        <div class="grid">
+          <div class="product-card" data-name="Essential Oil" data-price="1500">
+            <img src="images/essential-oil.jpg" alt="Essential Oil">
+            <h4>Essential Oil (Lavender)</h4>
+            <p class="price">JMD 1,500</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Eucalyptus Diffuser" data-price="3200">
+            <img src="images/diffuser.jpg" alt="Diffuser">
+            <h4>Eucalyptus Diffuser</h4>
+            <p class="price">JMD 3,200</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Aroma Lamp" data-price="2800">
+            <img src="images/aroma-lamp.jpg" alt="Aroma Lamp">
+            <h4>Aroma Lamp</h4>
+            <p class="price">JMD 2,800</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Scented Candle" data-price="1200">
+            <img src="images/scented-candle.jpg" alt="Scented Candle">
+            <h4>Scented Candle (Soy)</h4>
+            <p class="price">JMD 1,200</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Incense Sticks" data-price="600">
+            <img src="images/incense-sticks.jpg" alt="Incense sticks">
+            <h4>Incense Sticks (Pack)</h4>
+            <p class="price">JMD 600</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Room Mist" data-price="900">
+            <img src="images/room-mist.jpg" alt="Room mist">
+            <h4>Room Mist</h4>
+            <p class="price">JMD 900</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="category" id="bathspa">
+        <h3>Bath & Spa</h3>
+        <div class="grid">
+          <div class="product-card" data-name="Bath Salts" data-price="1100">
+            <img src="images/bath-salts.jpg" alt="Bath salts">
+            <h4>Bath Salts</h4>
+            <p class="price">JMD 1,100</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Bath Bombs" data-price="1200">
+            <img src="images/bath-bombs.jpg" alt="Bath bombs">
+            <h4>Bath Bombs (Set)</h4>
+            <p class="price">JMD 1,200</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Aromatherapy Shower Steamers" data-price="950">
+            <img src="images/shower-steamers.jpg" alt="Shower steamers">
+            <h4>Aromatherapy Shower Steamers</h4>
+            <p class="price">JMD 950</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Stress Relief Balm" data-price="800">
+            <img src="images/stress-balm.jpg" alt="Stress relief balm">
+            <h4>Stress Relief Balm</h4>
+            <p class="price">JMD 800</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="category" id="relaxation">
+        <h3>Relaxation & Sleep</h3>
+        <div class="grid">
+          <div class="product-card" data-name="Weighted Blanket" data-price="6000">
+            <img src="images/weighted-blanket.jpg" alt="Weighted blanket">
+            <h4>Weighted Blanket</h4>
+            <p class="price">JMD 6,000</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Scented Eye Mask" data-price="700">
+            <img src="images/eye-mask.jpg" alt="Scented eye mask">
+            <h4>Scented Eye Mask</h4>
+            <p class="price">JMD 700</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Relaxation Gift Set" data-price="4500">
+            <img src="images/relaxation-set.jpg" alt="Relaxation gift set">
+            <h4>Relaxation Gift Set</h4>
+            <p class="price">JMD 4,500</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Meditation Cushion" data-price="3500">
+            <img src="images/meditation-cushion.jpg" alt="Meditation cushion">
+            <h4>Meditation Cushion</h4>
+            <p class="price">JMD 3,500</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="category" id="teas">
+        <h3>Teas & Sleep Aids</h3>
+        <div class="grid">
+          <div class="product-card" data-name="Herbal Tea" data-price="650">
+            <img src="images/herbal-tea.jpg" alt="Herbal tea">
+            <h4>Herbal Tea (Calm Blend)</h4>
+            <p class="price">JMD 650</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Sleep Aid Kit" data-price="2100">
+            <img src="images/sleep-aids.jpg" alt="Sleep aids">
+            <h4>Sleep Aid Kit</h4>
+            <p class="price">JMD 2,100</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Crystal Set" data-price="1600">
+            <img src="images/crystal-set.jpg" alt="Crystal set">
+            <h4>Crystal Set</h4>
+            <p class="price">JMD 1,600</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Himalayan Salt Lamp" data-price="3500">
+            <img src="images/himalayan-salt.jpg" alt="Himalayan salt lamp">
+            <h4>Himalayan Salt Lamp</h4>
+            <p class="price">JMD 3,500</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="category" id="hometech">
+        <h3>Home Tech</h3>
+        <div class="grid">
+          <div class="product-card" data-name="Mood Light" data-price="2400">
+            <img src="images/mood-light.jpg" alt="Mood lights">
+            <h4>Mood Light (LED)</h4>
+            <p class="price">JMD 2,400</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+
+          <div class="product-card" data-name="Air Purifier" data-price="8800">
+            <img src="images/air-purifier.jpg" alt="Air purifier">
+            <h4>Air Purifier (Small)</h4>
+            <p class="price">JMD 8,800</p>
+            <button class="addBtn">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <aside id="cartPanel" class="cart-panel" aria-live="polite">
+      <h3>Your Cart</h3>
+      <table class="cart-table" aria-describedby="cartSummary">
+        <thead>
+          <tr><th>Item</th><th>Price</th><th>Qty</th><th>Sub</th><th></th></tr>
+        </thead>
+        <tbody id="cartBody">
+        </tbody>
+      </table>
+
+      <div id="cartSummary" class="cart-summary">
+        <p>Subtotal: JMD <span id="cartSubtotal">0</span></p>
+        <p>Tax (10%): JMD <span id="cartTax">0</span></p>
+        <p><strong>Total: JMD <span id="cartTotal">0</span></strong></p>
+      </div>
+
+      <div class="cart-actions">
+        <button id="clearCart" class="btn secondary">Clear All</button>
+        <button id="checkoutBtn" class="btn">Checkout</button>
+      </div>
+    </aside>
+
+    <section id="checkout" class="checkout-section hidden">
+      <h2>Checkout</h2>
+      <form id="checkoutForm">
+        <div class="form-row">
+          <label for="custName">Full name</label>
+          <input id="custName" name="custName" required>
+        </div>
+        <div class="form-row">
+          <label for="custEmail">Email</label>
+          <input id="custEmail" name="custEmail" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="custAddress">Shipping address</label>
+          <input id="custAddress" name="custAddress" required>
+        </div>
+        <div class="form-row">
+          <label for="custAmount">Amount being paid (JMD)</label>
+          <input id="custAmount" name="custAmount" type="number" min="0" required>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Confirm Order</button>
+          <button type="button" id="cancelCheckout" class="btn secondary">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="invoice" class="invoice-section hidden">
+      <h2>Invoice</h2>
+      <div class="invoice-meta">
+        <p>Order #: <span id="invoiceNumber"></span></p>
+        <p>Date: <span id="invoiceDate"></span></p>
+        <p>Customer: <span id="invoiceName"></span></p>
+      </div>
+
+      <table class="invoice-table">
+        <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Sub</th></tr></thead>
+        <tbody id="invoiceBody"></tbody>
+        <tfoot>
+          <tr><td colspan="3">Subtotal</td><td id="invSubtotal">0</td></tr>
+          <tr><td colspan="3">Tax (10%)</td><td id="invTax">0</td></tr>
+          <tr><td colspan="3"><strong>Total</strong></td><td id="invTotal">0</td></tr>
+        </tfoot>
+      </table>
+
+      <div class="invoice-actions">
+        <button id="printInvoice" class="btn">Print Invoice</button>
+        <button id="backToShop" class="btn secondary">Back to Shop</button>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>MoodScape — Premium aromatherapy & home relaxation products designed to help you unwind.</p>
+
+      <h3>Student Info</h3>
+      <p><strong>Full Name:</strong> Tashay Dorma</p>
+      <p><strong>ID#:</strong> 2409683</p>
+      <p><strong>Email:</strong> <a href="mailto:TASHAYTDORMA@students.utech.edu.jm">TASHAYTDORMA@students.utech.edu.jm</a></p>
+      <p><strong>Module Code:</strong> CIT2011</p>
+      <p><strong>Assignment Name:</strong> IA2</p>
+      <p><strong>Day/Time of Class:</strong> Monday 3:00 PM</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Questions? Email us at <a href="mailto:TASHAYTDORMA@students.utech.edu.jm">TASHAYTDORMA@students.utech.edu.jm</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MoodScape | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
